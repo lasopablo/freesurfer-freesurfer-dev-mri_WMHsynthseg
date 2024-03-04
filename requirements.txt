@@ -1,0 +1,4 @@
+# povisional requirements.txt . please install as recommended on README
+pytorch==1.7.0
+torchvision==0.8.1
+torchaudio==0.7.0
