@@ -11,6 +11,32 @@ reasonable. The utility expects the atlas file, `WMH-SynthSeg_v10_231110.pth`,
 to be installed under `$FREESURFER_HOME/models`, and can be downloaded from an ftp
 server.
 
+## Paper
+
+<p align="center">
+    <h3 align="center">WMH-SynthSeg</h3>
+</p>
+
+<p align="center">
+    "Quantifying White Matter Hyperintensity and Brain Volumes in Heterogeneous Clinical and Low-field portable MRI". <a href="https://github.com/lasopablo/freesurfer-freesurfer-dev-mri_WMHsynthseg">[View Project]</a>
+</p>
+
+<p align="center">
+  <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/WMH-SynthSeg">
+    <img src="https://surfer.nmr.mgh.harvard.edu/fswiki/WMH-SynthSeg?action=AttachFile&do=get&target=examples.png" width="400" alt="Quantifying white matter hyperintensity and brain volumes">
+  </a>
+</p>
+<p align="center">
+Developed as part of my Master's thesis at MGH, Harvard Medical School, this project leverages WMH-SynthSeg, an extension of SynthSeg, designed for brain MRI scans. It uniquely adapts to low-field MRI scans, providing high-resolution segmentations of white matter hyperintensities (WMH) and anatomical structures, even in challenging imaging conditions.
+</p>
+<p align="center">
+<b>Author:</b> Pablo Laso <br>
+<b>Email:</b> <a href="mailto:plaso@kth.se">plaso@kth.se</a> <br>
+<b>Citation:</b> If you use WMH-SynthSeg in your analysis, please cite <a href="https://arxiv.org/abs/2312.05119">our paper</a> under review. <br>
+</p>
+
+
+
 ## Downloading the atlas:
 Linux:
 
