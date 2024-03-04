@@ -15,27 +15,36 @@ server.
 
 Downloading the atlas:
     Linux:
+    ```bash
         wget https://ftp.nmr.mgh.harvard.edu/pub/dist/lcnpublic/dist/WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth 
+        ```
 
+    ```bash
     MacOS:
         curl -o WMH-SynthSeg_v10_231110.pth https://ftp.nmr.mgh.harvard.edu/pub/dist/lcnpublic/dist/WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth 
+        ```
 
 Installing the atlas (same for both Linux and MacOS):
+```bash
     cp WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth $FREESURFER_HOME/models
+```
 
 You should now see 'WMH-SynthSeg_v10_231110.pth' under $FREESURFER_HOME/models
 This can be confirmed, by running:
+```bash
     ls $FREESURFER_HOME/models | grep WMH-SynthSeg_v10_231110.pth | wc -l
+```
 
 The above command should print '1' to the terminal if the model is in the proper
 location.
 
 ## Create an environment 
-
+```bash
 conda create --name pytorch python=3.7
 conda activate pytorch
-conda install pytorch==1.7.0 torchvision torchaudio cudatoolkit=11.0 -c pytorch* 
+conda install pytorch==1.7.0 torchvision torchaudio cudatoolkit=11.0 -c pytorch*
+```
 
 ## Run the model
 
-mri_WMHsynthseg 
+Run `mri_WMHsynthseg` on the command line.
