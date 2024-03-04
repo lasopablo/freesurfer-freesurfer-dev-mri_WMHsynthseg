@@ -30,7 +30,7 @@ Installing the atlas (same for both Linux and MacOS):
     cp WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth $FREESURFER_HOME/models
 ```
 
-You should now see 'WMH-SynthSeg_v10_231110.pth' under $FREESURFER_HOME/models
+You should now see `WMH-SynthSeg_v10_231110.pth` under `$FREESURFER_HOME/models`
 This can be confirmed, by running:
 ```bash
     ls $FREESURFER_HOME/models | grep WMH-SynthSeg_v10_231110.pth | wc -l
