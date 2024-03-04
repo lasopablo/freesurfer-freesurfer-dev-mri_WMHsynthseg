@@ -14,8 +14,7 @@ to be installed under $FREESURFER_HOME/models, and can be downloaded from an ftp
 server.
 
 Downloading the atlas:
-    Linux:
-    
+Linux:
     ```bash
         wget https://ftp.nmr.mgh.harvard.edu/pub/dist/lcnpublic/dist/WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth 
     ```
