@@ -36,7 +36,7 @@ to be installed under `$FREESURFER_HOME/models`, and can be downloaded from an f
 server.
 
 
-## Downloading the atlas:
+### Downloading the atlas:
 Linux:
 
 ```bash
@@ -64,7 +64,7 @@ This can be confirmed, by running:
 The above command should print '1' to the terminal if the model is in the proper
 location.
 
-## Creating an environment 
+### Creating an environment 
 We highly recommend creating an environment for deveoplment purposes:
 ```bash
 conda create --name pytorch python=3.7
@@ -72,7 +72,7 @@ conda activate pytorch
 conda install pytorch==1.7.0 torchvision torchaudio cudatoolkit=11.0 -c pytorch*
 ```
 
-## Run the model
+### Run the model
 
 Run `mri_WMHsynthseg` on the command line, with the appropiate arguments.
 
