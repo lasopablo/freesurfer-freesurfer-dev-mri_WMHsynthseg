@@ -7,8 +7,8 @@ mri_WMHsynthseg utility. General usage and utility description can be found at:
 
 This utility requires an atlas file that does not ship with the standard install
 of FreeSurfer. This is done in an effort to keep the size of the installer
-reasonable. The utility expects the atlas file, 'WMH-SynthSeg_v10_231110.pth',  
-to be installed under $FREESURFER_HOME/models, and can be downloaded from an ftp
+reasonable. The utility expects the atlas file, `WMH-SynthSeg_v10_231110.pth`,  
+to be installed under `$FREESURFER_HOME/models`, and can be downloaded from an ftp
 server.
 
 ## Downloading the atlas:
