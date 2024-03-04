@@ -19,9 +19,8 @@ Downloading the atlas:
     ```bash
         wget https://ftp.nmr.mgh.harvard.edu/pub/dist/lcnpublic/dist/WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth 
     ```
-
+MacOS:
     ```bash
-    MacOS:
         curl -o WMH-SynthSeg_v10_231110.pth https://ftp.nmr.mgh.harvard.edu/pub/dist/lcnpublic/dist/WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth 
     ```
 
