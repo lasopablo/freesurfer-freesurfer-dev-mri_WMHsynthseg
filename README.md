@@ -39,7 +39,7 @@ This can be confirmed, by running:
 The above command should print '1' to the terminal if the model is in the proper
 location.
 
-## Create an environment 
+## Creating an environment 
 We highly recommend creating an environment for deveoplment purposes:
 ```bash
 conda create --name pytorch python=3.7
