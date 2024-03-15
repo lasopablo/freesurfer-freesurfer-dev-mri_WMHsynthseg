@@ -2,7 +2,7 @@
 
 
 <blockquote>
-  <p>:warning: <strong>Important Notice:</strong>: The <code>wmh_synthseg</code> has already been trained and is ready for use. However, please note that integration with FreeSurfer is currently in progress and not yet available. Stay tuned for updates on this implementation.</p>
+  <p>:warning: <strong>Important Notice:</strong> The <code>wmh_synthseg</code> has already been trained and is ready for use. However, please note that integration with FreeSurfer is currently in progress and not yet available. Stay tuned for updates on this implementation.</p>
 </blockquote>
 
 <p align="center">
