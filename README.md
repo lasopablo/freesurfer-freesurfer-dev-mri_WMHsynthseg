@@ -2,7 +2,7 @@
 
 
 <blockquote>
-  <p>:warning: <strong>Important Notice:</strong> The <code>wmh_synthseg</code> model has already been trained and is ready for use. However, please note that integration with FreeSurfer is currently in progress and not yet available. Stay tuned for updates on this implementation. In other words, running the model will not be straigh-forward.</p>
+  <p>:warning: <strong>Important Notice:</strong> The <code>wmh_synthseg</code> model has already been trained and is ready for use. However, please note that integration with FreeSurfer is currently in progress and not yet available. In other words, running the model will not be straigh-forward. Stay tuned for updates on this implementation.</p>
 </blockquote>
 
 <p align="center">
