@@ -75,4 +75,8 @@ conda install pytorch==1.7.0 torchvision torchaudio cudatoolkit=11.0 -c pytorch
 ### Run the model
 
 Run `mri_WMHsynthseg` on the command line, with the appropiate arguments.
+```
+usage: inference.py [-h] --i I --o O [--csv_vols CSV_VOLS] [--device DEVICE]
+                    [--threads THREADS] [--save_lesion_probabilities] [--crop]
+```
 
