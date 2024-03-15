@@ -1,9 +1,9 @@
 # mri_WMHsynthseg
 
 
-> 🎅 Old Saint Nick
->
-> 'Twas the night before Christmas, when all through the house not a creature was stirring, not even a mouse. The stockings were hung by the chimney with care, in hopes that St. Nicholas soon would be there. The children were nestled all snug in their beds, while visions of sugar plums danced in their heads.
+<blockquote>
+  <p>:warning: <strong>Warning</strong>: The model <code>wmh_synthseg</code> is already trained, but the software is yet to be implemented on FreeSurfer.</p>
+</blockquote>
 
 <p align="center">
     <h3 align="center">WMH-SynthSeg</h3>
