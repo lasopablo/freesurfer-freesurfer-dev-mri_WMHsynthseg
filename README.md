@@ -67,8 +67,8 @@ location.
 ### Creating an environment 
 We highly recommend creating an environment for deveoplment purposes:
 ```bash
-conda create --name pytorch python=3.7
-conda activate pytorch
+conda create --name wmh_synthseg python=3.7
+conda activate wmh_synthseg
 conda install pytorch==1.7.0 torchvision torchaudio cudatoolkit=11.0 -c pytorch*
 ```
 
