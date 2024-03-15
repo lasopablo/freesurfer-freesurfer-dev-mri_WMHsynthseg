@@ -69,7 +69,7 @@ We highly recommend creating an environment for deveoplment purposes:
 ```bash
 conda create --name wmh_synthseg python=3.7
 conda activate wmh_synthseg
-conda install pytorch==1.7.0 torchvision torchaudio cudatoolkit=11.0 -c pytorch*
+conda install pytorch==1.7.0 torchvision torchaudio cudatoolkit=11.0 -c pytorch
 ```
 
 ### Run the model
