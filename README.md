@@ -19,7 +19,7 @@
   </a>
 </p>
 <p align="center">
-Developed as part of my Master's thesis at MGH, Harvard Medical School, this project leverages WMH-SynthSeg, an extension of SynthSeg, designed for brain MRI scans. It uniquely adapts to low-field MRI scans, providing high-resolution segmentations of white matter hyperintensities (WMH) and anatomical structures, even in challenging imaging conditions.
+Developed as part of my Master's thesis at MGH, Harvard Medical School, and CSAIL, MIT, this project leverages WMH-SynthSeg, an extension of SynthSeg, designed for brain MRI scans. It uniquely adapts to low-field MRI scans, providing high-resolution segmentations of white matter hyperintensities (WMH) and anatomical structures, even in challenging imaging conditions.
 </p>
 <p align="center">
 <b>Author:</b> Pablo Laso <br>
