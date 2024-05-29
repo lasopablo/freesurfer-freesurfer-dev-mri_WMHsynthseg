@@ -91,7 +91,7 @@ def main():
     torch.set_num_threads(threads)
 
     # Constants;  TODO:replace by FS paths
-    model_file = os.path.join('/home/ubuntu/freesurfer-freesurfer-dev-mri_WMHsynthseg/models', 'WMH-SynthSeg_v10_231110.pth')
+    model_file = os.path.join('/app/models', 'WMH-SynthSeg_v10_231110.pth')
     label_list_segmentation = [0, 14, 15, 16, 24, 77, 85, 2, 3, 4, 7, 8, 10, 11, 12, 13, 17, 18, 26, 28, 41, 42, 43, 46,
                                47, 49, 50, 51, 52, 53, 54, 58, 60]
     label_list_segmentation_torch = torch.tensor(label_list_segmentation, device=device)
