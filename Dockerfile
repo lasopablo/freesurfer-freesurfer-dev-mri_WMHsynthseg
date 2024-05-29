@@ -28,8 +28,5 @@ RUN mkdir -p models
 # Download the required atlas file from the external URL
 RUN wget -O models/WMH-SynthSeg_v10_231110.pth https://ftp.nmr.mgh.harvard.edu/pub/dist/lcnpublic/dist/WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth
 
-# Install SimpleITK
-RUN pip install SimpleITK
-
 # Define the entrypoint
 ENTRYPOINT ["python", "WMHSynthSeg/inference.py"]
