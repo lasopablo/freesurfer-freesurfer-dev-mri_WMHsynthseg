@@ -68,7 +68,7 @@ To run the container and process your MRI images, use the following command:
 1. Clone repository
 ```bash
     git clone https://github.com/lasopablo/freesurfer-freesurfer-dev-mri_WMHsynthseg.git
-cd freesurfer-freesurfer-dev-mri_WMHsynthseg
+    cd freesurfer-freesurfer-dev-mri_WMHsynthseg
 ```
 
 2. Change path in the inference.py file:
