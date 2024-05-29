@@ -30,12 +30,15 @@ Developed as part of my Master's thesis at MGH, Harvard Medical School, and CSAI
 ## Installation
 
 <p>The <code>wmh_synthseg</code> model has already been trained and is ready for use. Here are some options to run the model now:
+  
   1. A Docker container has been developed to overcome this temporary issue. (recommended)
+     
   2. Alternatevely, you can clone this repository, download the model from the link, and add it to your path. Please note you need a big memory to run it locally.
+     
   3. You can also try to use it from FreeSurfer. However, please note that integration with FreeSurfer is currently in progress and not yet available. In other words, running the model will not be straigh-forward. Stay tuned for updates on this implementation.</p>
 
 
-### Docker 
+### (1) Docker 
 
 1. Clone the Repository:
 
@@ -60,9 +63,21 @@ To run the container and process your MRI images, use the following command:
     docker run --rm -v /path/to/your/data:/data wmh_synthseg --i /data/your_input_image.nii.gz --o /data/your_output_image.nii.gz --crop
 ```
 
+### (2) Cloning repo and changing the path:
+
+1. Clone repository
+```bash
+    git clone https://github.com/lasopablo/freesurfer-freesurfer-dev-mri_WMHsynthseg.git
+cd freesurfer-freesurfer-dev-mri_WMHsynthseg
+```
+
+2. Change path in the inference.py file:
+```python
+      model_file = os.path.join('/app/models', 'WMH-SynthSeg_v10_231110.pth')
+```
 
 
-### Downloading the atlas (official):
+### (3) Downloading the atlas (official):
 
 This section documents how to download and install the atlas file required by the
 mri_WMHsynthseg utility. General usage and utility description can be found at:
@@ -75,8 +90,8 @@ reasonable. The utility expects the atlas file, `WMH-SynthSeg_v10_231110.pth`,
 to be installed under `$FREESURFER_HOME/models`, and can be downloaded from an ftp
 server.
 
-
-### Downloading the atlas:
+1. Download the atlas:
+   
 Linux:
 
 ```bash
@@ -104,15 +119,7 @@ This can be confirmed, by running:
 The above command should print '1' to the terminal if the model is in the proper
 location.
 
-### Creating an environment 
-We highly recommend creating an environment for deveoplment purposes:
-```bash
-conda create --name wmh_synthseg python=3.7
-conda activate wmh_synthseg
-conda install pytorch==1.7.0 torchvision torchaudio cudatoolkit=11.0 -c pytorch
-```
-
-### Run the model
+2. Run the model
 
 Run `mri_WMHsynthseg` on the command line, with the appropiate arguments.
 ```
