@@ -46,7 +46,7 @@ If you haven't already, clone the repository to your local machine:
 
 ```bash
     git clone https://github.com/lasopablo/freesurfer-freesurfer-dev-mri_WMHsynthseg.git
-cd freesurfer-freesurfer-dev-mri_WMHsynthseg
+    cd freesurfer-freesurfer-dev-mri_WMHsynthseg
 ```
 
 2. Build the Docker Image:
