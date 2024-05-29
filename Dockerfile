@@ -14,16 +14,16 @@ RUN apt-get update && apt-get install -y \
 
 # Install Python dependencies
 RUN pip install --upgrade pip
-RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-
-# Clone WMH-SynthSeg repository
-RUN git clone https://github.com/lasopablo/freesurfer-freesurfer-dev-mri_WMHsynthseg.git /wmh_synthseg
+RUN pip install torch==1.7.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
 # Set the working directory
-WORKDIR /wmh_synthseg
+WORKDIR /app
+
+# Clone WMH-SynthSeg repository
+RUN git clone https://github.com/lasopablo/freesurfer-freesurfer-dev-mri_WMHsynthseg.git .
 
 # Download the required atlas file from the external URL
-RUN wget -O models/WMH-SynthSeg_v10_231110.pth <EXTERNAL_URL>
+RUN wget -O models/WMH-SynthSeg_v10_231110.pth https://ftp.nmr.mgh.harvard.edu/pub/dist/lcnpublic/dist/WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth
 
 # Install SimpleITK
 RUN pip install SimpleITK
