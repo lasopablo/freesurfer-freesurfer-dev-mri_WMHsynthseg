@@ -41,40 +41,40 @@ Developed as part of my Master's thesis at MGH, Harvard Medical School, and CSAI
 ### (1) Docker 
 
 1. Clone the Repository:
-
-If you haven't already, clone the repository to your local machine:
-
-```bash
-    git clone https://github.com/lasopablo/freesurfer-freesurfer-dev-mri_WMHsynthseg.git
-    cd freesurfer-freesurfer-dev-mri_WMHsynthseg
-```
+  
+  If you haven't already, clone the repository to your local machine:
+  
+  ```bash
+      git clone https://github.com/lasopablo/freesurfer-freesurfer-dev-mri_WMHsynthseg.git
+      cd freesurfer-freesurfer-dev-mri_WMHsynthseg
+  ```
 
 2. Build the Docker Image:
-   
-Open a terminal and navigate to your project directory, then run:
-```bash
-    docker build --build-arg CACHEBUST=$(date +%s) -t wmh_synthseg .
-```
+     
+  Open a terminal and navigate to your project directory, then run:
+  ```bash
+      docker build --build-arg CACHEBUST=$(date +%s) -t wmh_synthseg .
+  ```
 
 3. Running the Docker Container
-   
-To run the container and process your MRI images, use the following command:
-```bash
-    docker run --rm -v /path/to/your/data:/data wmh_synthseg --i /data/your_input_image.nii.gz --o /data/your_output_image.nii.gz --crop
-```
+     
+  To run the container and process your MRI images, use the following command:
+  ```bash
+      docker run --rm -v /path/to/your/data:/data wmh_synthseg --i /data/your_input_image.nii.gz --o /data/your_output_image.nii.gz --crop
+  ```
 
 ### (2) Cloning repo and changing the path:
-
-1. Clone repository
-```bash
-    git clone https://github.com/lasopablo/freesurfer-freesurfer-dev-mri_WMHsynthseg.git
-    cd freesurfer-freesurfer-dev-mri_WMHsynthseg
-```
-
-2. Change path in the inference.py file:
-```python
-      model_file = os.path.join('/app/models', 'WMH-SynthSeg_v10_231110.pth')
-```
+  
+  1. Clone repository
+  ```bash
+      git clone https://github.com/lasopablo/freesurfer-freesurfer-dev-mri_WMHsynthseg.git
+      cd freesurfer-freesurfer-dev-mri_WMHsynthseg
+  ```
+  
+  2. Change path in the inference.py file:
+  ```python
+        model_file = os.path.join('/app/models', 'WMH-SynthSeg_v10_231110.pth')
+  ```
 
 
 ### (3) Downloading the atlas (official):
@@ -91,39 +91,39 @@ to be installed under `$FREESURFER_HOME/models`, and can be downloaded from an f
 server.
 
 1. Download the atlas:
-   
-Linux:
-
-```bash
-    wget https://ftp.nmr.mgh.harvard.edu/pub/dist/lcnpublic/dist/WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth 
-```
-
-
-MacOS:
-
-```bash
-    curl -o WMH-SynthSeg_v10_231110.pth https://ftp.nmr.mgh.harvard.edu/pub/dist/lcnpublic/dist/WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth 
-```
-
-Installing the atlas (same for both Linux and MacOS):
-```bash
-    cp WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth $FREESURFER_HOME/models
-```
-
-You should now see `WMH-SynthSeg_v10_231110.pth` under `$FREESURFER_HOME/models`
-This can be confirmed, by running:
-```bash
-    ls $FREESURFER_HOME/models | grep WMH-SynthSeg_v10_231110.pth | wc -l
-```
-
-The above command should print '1' to the terminal if the model is in the proper
-location.
+     
+  Linux:
+  
+  ```bash
+      wget https://ftp.nmr.mgh.harvard.edu/pub/dist/lcnpublic/dist/WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth 
+  ```
+  
+  
+  MacOS:
+  
+  ```bash
+      curl -o WMH-SynthSeg_v10_231110.pth https://ftp.nmr.mgh.harvard.edu/pub/dist/lcnpublic/dist/WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth 
+    ```
+  
+  Installing the atlas (same for both Linux and MacOS):
+  ```bash
+      cp WMH-SynthSeg/WMH-SynthSeg_v10_231110.pth $FREESURFER_HOME/models
+  ```
+  
+  You should now see `WMH-SynthSeg_v10_231110.pth` under `$FREESURFER_HOME/models`
+  This can be confirmed, by running:
+  ```bash
+      ls $FREESURFER_HOME/models | grep WMH-SynthSeg_v10_231110.pth | wc -l
+  ```
+  
+  The above command should print '1' to the terminal if the model is in the proper
+  location.
 
 2. Run the model
-
-Run `mri_WMHsynthseg` on the command line, with the appropiate arguments.
-```
-usage: inference.py [-h] --i I --o O [--csv_vols CSV_VOLS] [--device DEVICE]
-                    [--threads THREADS] [--save_lesion_probabilities] [--crop]
-```
+  
+  Run `mri_WMHsynthseg` on the command line, with the appropiate arguments.
+  ```
+  usage: inference.py [-h] --i I --o O [--csv_vols CSV_VOLS] [--device DEVICE]
+                      [--threads THREADS] [--save_lesion_probabilities] [--crop]
+  ```
 
