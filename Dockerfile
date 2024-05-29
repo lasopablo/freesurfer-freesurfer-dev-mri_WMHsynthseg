@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
 
 # Install Python dependencies
 RUN pip install --upgrade pip
-RUN pip install torch torchvision torchaudio
+RUN pip install torch torchvision torchaudio h5py nibabel numpy scipy
 
 # Set the working directory
 WORKDIR /app
