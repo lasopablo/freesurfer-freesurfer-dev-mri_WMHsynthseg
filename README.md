@@ -2,7 +2,7 @@
 
 
 <blockquote>
-  <p>:warning: <strong>Important Notice:</strong> The <code>wmh_synthseg</code> model has already been trained and is ready for use. However, please note that integration with FreeSurfer is currently in progress and not yet available. In other words, running the model will not be straigh-forward. Stay tuned for updates on this implementation.</p>
+  <p>:warning: <strong>Important Notice:</strong> The <code>wmh_synthseg</code> model has already been trained and is ready for use. A Docker container has been developed to overcome this temporary issue.</p>
 </blockquote>
 
 <p align="center">
@@ -29,7 +29,42 @@ Developed as part of my Master's thesis at MGH, Harvard Medical School, and CSAI
 
 ## Installation
 
-This README documents how to download and install the atlas file required by the
+<p>The <code>wmh_synthseg</code> model has already been trained and is ready for use. Here are some options to run the model now:
+  1. A Docker container has been developed to overcome this temporary issue. (recommended)
+  2. Alternatevely, you can clone this repository, download the model from the link, and add it to your path. Please note you need a big memory to run it locally.
+  3. You can also try to use it from FreeSurfer. However, please note that integration with FreeSurfer is currently in progress and not yet available. In other words, running the model will not be straigh-forward. Stay tuned for updates on this implementation.</p>
+
+
+### Docker 
+
+1. Clone the Repository:
+
+If you haven't already, clone the repository to your local machine:
+
+```bash
+    git clone https://github.com/lasopablo/freesurfer-freesurfer-dev-mri_WMHsynthseg.git
+cd freesurfer-freesurfer-dev-mri_WMHsynthseg
+```
+
+2. Build the Docker Image:
+   
+Open a terminal and navigate to your project directory, then run:
+```bash
+    docker build --build-arg CACHEBUST=$(date +%s) -t wmh_synthseg .
+```
+
+3. Running the Docker Container
+   
+To run the container and process your MRI images, use the following command:
+```bash
+    docker run --rm -v /path/to/your/data:/data wmh_synthseg --i /data/your_input_image.nii.gz --o /data/your_output_image.nii.gz --crop
+```
+
+
+
+### Downloading the atlas (official):
+
+This section documents how to download and install the atlas file required by the
 mri_WMHsynthseg utility. General usage and utility description can be found at:
     
     https://surfer.nmr.mgh.harvard.edu/fswiki/WMH-SynthSeg
