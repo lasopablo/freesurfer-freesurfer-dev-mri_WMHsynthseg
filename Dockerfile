@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
 
 # Install Python dependencies
 RUN pip install --upgrade pip
-RUN pip install torch==1.7.1 torchvision torchaudio
+RUN pip install torch torchvision torchaudio
 
 # Set the working directory
 WORKDIR /app
