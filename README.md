@@ -31,14 +31,14 @@ Developed as part of my Master's thesis at MGH, Harvard Medical School, and CSAI
 
 <p>The <code>wmh_synthseg</code> model has already been trained and is ready for use. Here are some options to run the model now:
   
-  1. A Docker container has been developed to overcome this temporary issue. (recommended)
+  1. A **Docker** container has been developed to overcome this temporary issue. (recommended)
      
-  2. Alternatively, you can clone this repository, download the model from the link, and add it to your path. Please note you need a big memory to run it locally.
+  2. Alternatively, you can clone this repository, **download the model** from the link, and add it to your path. Please note you need a big memory to run it locally.
      
-  3. You can also try to use it from FreeSurfer. However, please note that integration with FreeSurfer is currently in progress and not yet available. In other words, running the model will not be straight-forward. Stay tuned for updates on this implementation.</p>
+  3. You can also try to use it from **FreeSurfer**. However, please note that integration with FreeSurfer is currently in progress and not yet available. In other words, running the model will not be straight-forward. Stay tuned for updates on this implementation.</p>
 
 
-### (1) Docker 
+### (1) Docker:
 
 1. **Clone the Repository:**
   
