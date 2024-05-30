@@ -15,7 +15,7 @@
 
 <p align="center">
   <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/WMH-SynthSeg">
-    <img src="https://surfer.nmr.mgh.harvard.edu/fswiki/WMH-SynthSeg?action=AttachFile&do=get&target=examples.png" width="400" alt="Quantifying white matter hyperintensity and brain volumes">
+    <img src="https://miro.medium.com/v2/resize:fit:2000/1*ovEGmOI3bcCeauu8jEBzsg.png" width="400" alt="Quantifying white matter hyperintensity and brain volumes">
   </a>
 </p>
 <p align="center">
