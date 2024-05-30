@@ -33,14 +33,14 @@ Developed as part of my Master's thesis at MGH, Harvard Medical School, and CSAI
   
   1. A Docker container has been developed to overcome this temporary issue. (recommended)
      
-  2. Alternatevely, you can clone this repository, download the model from the link, and add it to your path. Please note you need a big memory to run it locally.
+  2. Alternatively, you can clone this repository, download the model from the link, and add it to your path. Please note you need a big memory to run it locally.
      
-  3. You can also try to use it from FreeSurfer. However, please note that integration with FreeSurfer is currently in progress and not yet available. In other words, running the model will not be straigh-forward. Stay tuned for updates on this implementation.</p>
+  3. You can also try to use it from FreeSurfer. However, please note that integration with FreeSurfer is currently in progress and not yet available. In other words, running the model will not be straight-forward. Stay tuned for updates on this implementation.</p>
 
 
 ### (1) Docker 
 
-1. Clone the Repository:
+1. **Clone the Repository:**
   
   If you haven't already, clone the repository to your local machine:
   
@@ -49,14 +49,14 @@ Developed as part of my Master's thesis at MGH, Harvard Medical School, and CSAI
       cd freesurfer-freesurfer-dev-mri_WMHsynthseg
   ```
 
-2. Build the Docker Image:
+2. **Build the Docker Image:**
      
   Open a terminal and navigate to your project directory, then run:
   ```bash
       docker build --build-arg CACHEBUST=$(date +%s) -t wmh_synthseg .
   ```
 
-3. Running the Docker Container
+3. **Running the Docker Container:**
      
   To run the container and process your MRI images, use the following command:
   ```bash
@@ -65,13 +65,13 @@ Developed as part of my Master's thesis at MGH, Harvard Medical School, and CSAI
 
 ### (2) Cloning repo and changing the path:
   
-  1. Clone repository
+  1. **Clone repository:**
   ```bash
       git clone https://github.com/lasopablo/freesurfer-freesurfer-dev-mri_WMHsynthseg.git
       cd freesurfer-freesurfer-dev-mri_WMHsynthseg
   ```
   
-  2. Change path in the inference.py file:
+  2. **Change path in the inference.py file:**
   ```python
         model_file = os.path.join('/app/models', 'WMH-SynthSeg_v10_231110.pth')
   ```
@@ -90,7 +90,7 @@ reasonable. The utility expects the atlas file, `WMH-SynthSeg_v10_231110.pth`,
 to be installed under `$FREESURFER_HOME/models`, and can be downloaded from an ftp
 server.
 
-1. Download the atlas:
+1. **Download the atlas**:
      
   Linux:
   
@@ -119,9 +119,9 @@ server.
   The above command should print '1' to the terminal if the model is in the proper
   location.
 
-2. Run the model
+2. **Run the model**
   
-  Run `mri_WMHsynthseg` on the command line, with the appropiate arguments.
+  Run `mri_WMHsynthseg` on the command line, with the appropriate arguments.
   ```
   usage: inference.py [-h] --i I --o O [--csv_vols CSV_VOLS] [--device DEVICE]
                       [--threads THREADS] [--save_lesion_probabilities] [--crop]
