@@ -40,27 +40,11 @@ Developed as part of my Master's thesis at MGH, Harvard Medical School, and CSAI
 
 ### (1) Docker:
 
-1. **Clone the Repository:**
-  
-  If you haven't already, clone the repository to your local machine:
-  
-  ```bash
-      git clone https://github.com/lasopablo/freesurfer-freesurfer-dev-mri_WMHsynthseg.git
-      cd freesurfer-freesurfer-dev-mri_WMHsynthseg
-  ```
-
-2. **Build the Docker Image:**
-     
-  Open a terminal and navigate to your project directory, then run:
-  ```bash
-      docker build --build-arg CACHEBUST=$(date +%s) -t wmh_synthseg .
-  ```
-
-3. **Running the Docker Container:**
+**Running the Docker Container:**
      
   To run the container and process your MRI images, use the following command:
   ```bash
-      docker run --rm -v /path/to/your/data:/data wmh_synthseg --i /data/your_input_image.nii.gz --o /data/your_output_image.nii.gz --crop
+      docker run --rm -v /path/to/your/data:/data wmh_synthseg --i /data/your_input_image.nii.gz --o /data/your_output_image.nii.gz 
   ```
 
 ### (2) Cloning repo and changing the path:
