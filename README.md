@@ -40,11 +40,17 @@ Developed as part of my Master's thesis at MGH, Harvard Medical School, and CSAI
 
 ### (1) Docker:
 
-**Running the Docker Container:**
+1. **Downloading the Docker Container:**
+     
+  To download the container from Docker, use the following command:
+  ```bash
+      docker pull pablaso/wmh_synthseg:latest
+  ```
+2. **Running the Docker Container:**
      
   To run the container and process your MRI images, use the following command:
   ```bash
-      docker run --rm -v /path/to/your/data:/data wmh_synthseg --i /data/your_input_image.nii.gz --o /data/your_output_image.nii.gz 
+      docker run --rm -v /path/to/your/data:/data pablaso/wmh_synthseg --i /data/your_input_image.nii.gz --o /data/your_output_image.nii.gz
   ```
 
 ### (2) Cloning repo and changing the path:
