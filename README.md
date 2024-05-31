@@ -2,7 +2,7 @@
 
 
 <blockquote>
-  <p>:warning: <strong>Important Notice:</strong> The <code>wmh_synthseg</code> model has just been trained and is ready for use. A [Docker](https://hub.docker.com/repository/docker/pablaso/wmh_synthseg/general) container has been developed temporarily.</p>
+  <p>:warning: <strong>Important Notice:</strong> The <code>wmh_synthseg</code> model has just been trained and is ready for use. A [Docker container](https://hub.docker.com/repository/docker/pablaso/wmh_synthseg/general) has been developed temporarily.</p>
 </blockquote>
 
 <p align="center">
