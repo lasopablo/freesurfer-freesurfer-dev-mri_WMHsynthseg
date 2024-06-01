@@ -2,7 +2,7 @@
 
 
 <blockquote>
-  <p>:warning: <strong>Important Notice:</strong> The <code>wmh_synthseg</code> model has just been trained and is ready for use. A <a href="https://hub.docker.com/repository/docker/pablaso/wmh_synthseg/general">Docker container</a> has been developed temporarily.</p>
+  <p>:warning: <strong>Important Notice:</strong> The <code>wmh_synthseg</code> model has just been trained and is ready for use. A <a href="https://hub.docker.com/repository/docker/pablaso/wmh_synthseg/general">Docker container</a> is temporarily available.</p>
 </blockquote>
 
 <p align="center">
@@ -31,7 +31,7 @@ Developed as part of my Master's thesis at MGH, Harvard Medical School, and CSAI
 
 <p>The <code>wmh_synthseg</code> model has already been trained and is ready for use. Here are some options to run the model now:
   
-  1. A **Docker container** is avialable temporarily. (recommended)
+  1. A **Docker container** is temporarily avialable. (recommended)
      
   2. Alternatively, you can clone this repository, **download the model** from the link, and add it to your path. Please note you need a big memory to run it locally.
      
